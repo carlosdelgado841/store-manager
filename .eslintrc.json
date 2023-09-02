@@ -1,0 +1,27 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "prettier",
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "eqeqeq": "error",
+      "no-warning-comments": "warn",
+      "max-depth": ["error", 4],
+      "curly": "error",
+      "complexity": ["error", 10],
+      "no-extra-boolean-cast": ["error", { "enforceForLogicalOperands": true }],
+      "@typescript-eslint/camelcase": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/interface-name-prefix": "off",
+      "@typescript-eslint/prefer-optional-chain": "warn",
+      "@typescript-eslint/no-use-before-define": "off"
+    }
+  }
+  
